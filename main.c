@@ -1,5 +1,4 @@
 #include "stm32f4xx.h"
-#define ARM_MATH_CM4
 
 void EXT_Init(void);
 void configureLED(void);
@@ -33,7 +32,7 @@ int main ()
 	External_Interrupt_Enable();
 	while(1)
 	{
-		//GPIOD->ODR = (0x0UL<<12);
+
 }
 }
 void EXTI0_IRQHandler( )
